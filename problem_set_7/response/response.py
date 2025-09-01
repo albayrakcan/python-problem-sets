@@ -1,7 +1,12 @@
+from validator_collection import validators, checkers, errors
 
 
-def validate():
-    ...
+def validate(s):
+    try:
+        if result := validators.email(s):
+            return "Valid"
+    except errors.InvalidEmailError:
+        return "Invalid"
 
 
 def main():
