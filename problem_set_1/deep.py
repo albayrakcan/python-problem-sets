@@ -1,5 +1,5 @@
 def main():
-    answer = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ").lower()
+    answer = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ").lower().strip()
     deep(answer)
 
 def deep(answer):

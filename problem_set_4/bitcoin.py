@@ -23,7 +23,7 @@ def main():
     except requests.RequestException:
         sys.exit()
 
-    print(f"${bitcoin*float(content["data"]["priceUsd"])}")
+    print(f"${bitcoin*float(content["data"]["priceUsd"]):,.4f}")
 
 
 main()

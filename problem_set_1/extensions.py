@@ -14,7 +14,10 @@ def main():
     extension(file_name)
 
 def extension(file):
-    extension_name = file.split('.')[1]
+    if "." not in file:
+        print("application/octet-stream")
+
+    extension_name = file.rsplit('.',1)[1]
     match extension_name:
         case "jpg" | "jpeg":
             print("image/jpeg")
@@ -26,5 +29,6 @@ def extension(file):
             print("text/plain")
         case _:
             print("application/octet-stream")
+
 
 main()

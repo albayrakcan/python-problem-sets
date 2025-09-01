@@ -3,7 +3,7 @@ def main():
     print(f"Output: {twttr(name)}")
 
 def twttr(name):
-    vowels=["a","e","i","o","u"]
+    vowels=["a","A","e","E","i","I","o","O","u","U"]
     twttr_name=""
     new_name=[char for char in name if not char in vowels]
     for char in new_name:

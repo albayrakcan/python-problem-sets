@@ -10,13 +10,14 @@ def grocery():
             break
         else:
             items.append(item)
+        items = sorted(items)
     count(items)
 
 def count(items):
     count_dict = {}
     for item in items:
         if item not in count_dict:
-            count_dict[item] = items.count(item)  # Count how many times the item appears
+            count_dict[item] = items.count(item)
     print_dict(count_dict)
 
 def print_dict(dict):

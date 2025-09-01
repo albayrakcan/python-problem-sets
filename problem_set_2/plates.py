@@ -32,25 +32,5 @@ def number_check(word, limit):
             break
     return False if word[0] == "0" else word.isdigit()
 
-main()
-
-"""
-import string
-def word_check_alt(word):
-    while True:
-        for char in word:
-            if char in string.punctuation or char.isspace():
-                check = False
-                break
-            else:
-                check = True
-        return check
-"""
-
-
-
-
-
-
-        
+main()   
 

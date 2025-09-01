@@ -4,9 +4,11 @@ def main():
 def fuel():
     while True:
         fraction=input("Fraction: ")
+        if "-" in fraction:
+            continue
         try:
             X, Y = int(fraction.split("/")[0]), int(fraction.split("/")[1])
-            percent = int(100*(X/Y))
+            percent = round(100*(X/Y))
         except ZeroDivisionError:
             pass
         except ValueError:

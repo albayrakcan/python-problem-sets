@@ -18,11 +18,11 @@ def taqueria():
     while True:
         try:
             food=input("Item: ").title()
-            price += menu[food]
+            price += float(menu[food])
         except EOFError:
             break
         except KeyError:
             continue
-        print(f"Total: ${price}")
+        print(f"Total: ${price:.2f}")
 
 main()

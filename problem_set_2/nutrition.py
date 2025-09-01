@@ -45,7 +45,7 @@ fruit_list = [
 ]
 
 def main():
-    fruit = input("Item: ")
+    fruit = input("Item: ").lower()
     nutrition(fruit)
     # nutrition_list(fruit)
 
