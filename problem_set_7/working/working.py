@@ -11,8 +11,6 @@ def convert(s):
         h1, m1, t1 = int(match.group("h1")), match.group("m1"), match.group("t1")
         h2, m2, t2 = int(match.group("h2")), match.group("m2"), match.group("t2")
 
-        print(h1)
-
         hours = [h1, h2]
         minutes = [m1, m2]
         times = [t1, t2]

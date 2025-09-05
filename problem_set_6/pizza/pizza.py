@@ -9,9 +9,7 @@ def tabulate_menu(menu):
     try:
         with open(menu, "r", encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
-            for row in reader:
-                menu_list.append(row)
-            print(tabulate(menu_list))
+            print(tabulate(reader, tablefmt="grid",headers="keys"))
     except:
         sys.exit("File does not exist")
 

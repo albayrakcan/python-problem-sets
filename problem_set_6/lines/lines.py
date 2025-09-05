@@ -20,13 +20,13 @@ def count_lines(file_name):
         sys.exit("File does not exist")
 
     for line in lines:
-        if line.startswith("#"):
+        if line.lstrip().startswith("#"):
             continue
-        elif line.strip() == "":
+        elif line.lstrip() == "":
             continue
 
         line_count += 1
-    
+
     return line_count
 
 
