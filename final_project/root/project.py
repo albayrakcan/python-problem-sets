@@ -301,7 +301,7 @@ def fill_sheet(date_worked):
 
         with open(f"hours/{year}.csv", "w", newline="") as file:
             writer = csv.DictWriter(
-                file, fieldnames=["date", "day", "weekday", "hours", "holiday"]
+                file, fieldnames=["date", "day", "weekday", "hours"]
             )
             writer.writeheader()
             for weekday in weekdays:
